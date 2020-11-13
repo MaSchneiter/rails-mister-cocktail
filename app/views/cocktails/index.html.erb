@@ -1,6 +1,10 @@
-<div class="container">
-  <h1>All cocktails</h1>
+<div class="home-banner">
+  <h1>Max's Cocktail Bar</h1>
+  <h2><%= link_to "Create your cocktail", new_cocktail_path, class:"btn btn-primary" %></h2>
+</div>
 
+<div class="container">
+  <h2>All cocktails</h2>
   <ul class="list-group">
           <% @cocktails.each do |cocktail| %>
             <li class="list-group-item">
